@@ -33,6 +33,9 @@ public class URLReader {
         inputLine = in.readLine();
         System.out.println(inputLine);
 
+        //commit here by other user (MasterBuilder747)
+        System.out.println("Commit test");
+
         ObjectMapper objectMapper = new ObjectMapper();
         //objectMapper.disable(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES);
 
