@@ -11,3 +11,4 @@ public class Wind {
         this.deg = deg;
     }
 }
+
