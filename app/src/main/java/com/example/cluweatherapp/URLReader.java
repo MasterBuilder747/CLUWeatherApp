@@ -8,7 +8,7 @@ import java.io.*;
 
 public class URLReader {
     public static void main(String[] args) throws Exception{
-
+        //abcccccdddd
         //Website URL
         URL weatherMap = new URL("http://api.openweathermap.org/data/2.5/weather?zip=91360,us&appid=9035a183aea3ebf0f7fe2c28dc04c7b3");
         //creates a connection object, but does not establish the connection yet.
