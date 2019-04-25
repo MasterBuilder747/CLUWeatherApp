@@ -4,19 +4,19 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Complete {
-    Coordinates coord;
-    Weather[] weather;
-    String base;
-    Main main;
-    Rain rain;
-    int visibility;
-    Wind wind;
-    Clouds clouds;
-    long dt;
-    Sys sys;
-    long id;
-    String name;
-    int cod;
+    private Coordinates coord;
+    private Weather[] weather;
+    private String base;
+    private Main main;
+    private Rain rain;
+    private int visibility;
+    private Wind wind;
+    private Clouds clouds;
+    private long dt;
+    private Sys sys;
+    private long id;
+    private String name;
+    private int cod;
     @JsonCreator
     public Complete(@JsonProperty("coord") Coordinates coord, @JsonProperty("weather") Weather[] weather,@JsonProperty("base") String base,
                     @JsonProperty("main") Main main, @JsonProperty("rain") Rain rain, @JsonProperty("visibility") int visibility,@JsonProperty("wind") Wind wind,
@@ -36,51 +36,42 @@ public class Complete {
         this.cod = cod;
     }
 
+    
     public Coordinates getCoord() {
         return coord;
     }
-
     public Weather[] getWeather() {
         return weather;
     }
-
     public String getBase() {
         return base;
     }
-
     public Main getMain() {
         return main;
     }
-
     public int getVisibility() {
         return visibility;
     }
-
     public Wind getWind() {
         return wind;
     }
-
     public Clouds getClouds() {
         return clouds;
     }
-
     public long getDt() {
         return dt;
     }
-
     public Sys getSys() {
         return sys;
     }
-
     public long getId() {
         return id;
     }
-
     public String getName() {
         return name;
     }
-
     public int getCod() {
         return cod;
     }
 }
+

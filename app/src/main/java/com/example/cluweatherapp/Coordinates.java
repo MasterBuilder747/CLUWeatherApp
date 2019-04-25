@@ -4,6 +4,7 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Coordinates {
+    //private vars
     private double lon, lat;
     @JsonCreator
     public Coordinates(@JsonProperty("lon")double lon, @JsonProperty("lat")double lat) {

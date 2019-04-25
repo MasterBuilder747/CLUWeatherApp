@@ -4,9 +4,10 @@ import com.fasterxml.jackson.annotation.JsonCreator;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 public class Clouds {
-    int all;
+    private int all;
     @JsonCreator
-    public Clouds(@JsonProperty("all") int all){
+    public Clouds(@JsonProperty("all") int all) {
         this.all = all;
     }
 }
+
